@@ -1,0 +1,177 @@
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.todos-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.column {
+    position: relative;
+    flex: 1;
+    margin: 0 10px;
+}
+
+.todos {
+    padding: 0;
+    list-style: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #f9f9f9;
+    min-height: 600px;
+    max-height: 600px; 
+    overflow-y: auto;
+}
+
+.todos.do {
+    background-color: #ffefef;
+}
+
+.todos.inprogress {
+    background-color: #fff9e5;
+}
+
+.todos.done {
+    background-color: #e8f5e9;
+}
+
+.todo {
+    display: block;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+    cursor: pointer; 
+}
+
+.todo:last-child {
+    border-bottom: none;
+}
+
+.delete {
+    cursor: pointer;
+}
+
+.todo:active {
+    opacity: 0.5;
+}
+
+.total-count {
+    text-align: center;
+    padding: 10px;
+    font-weight: bold;
+    border-top: 1px solid #ccc;
+}
+
+.input-container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.input-container input {
+    flex: 1;
+    height: 100%;
+    box-sizing: border-box;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+.input-container button {
+    margin-left: 10px;
+    padding: 10px 16px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+}
+
+.btn-add {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    cursor: pointer; 
+}
+
+.title {
+    text-align: center;
+}
+
+.input-edit {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    text-align: left;
+}
+
+.btn-edit {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    text-align: center; 
+    cursor: pointer;
+}
+
+.input-edit.do {
+    background-color: #ffefef;
+}
+
+.input-edit.inprogress {
+    background-color: #fff9e5;
+}
+
+.input-edit.done {
+    background-color: #e8f5e9;
+}
+
+.modal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 80%;
+    max-width: 500px;
+    text-align: center;
+    position: relative;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.desc {
+    font-size: 8px;
+}
+
+
+
